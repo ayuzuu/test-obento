@@ -275,7 +275,7 @@ h2:after {
 }
 .concept-area ul li:nth-child(even) .img-box-concept {
   top: 20%;
-  right: 0;
+  left: 0;
 }
 .concept-area ul li .img-box-concept img {
   width: 100%;
@@ -315,11 +315,17 @@ h2:after {
   width: 100%;
   background-color: #fff;
   border-radius: 6px;
-  padding: 4%;
+  padding: 6% 5%;
   margin-bottom: 10%;
 }
-.delivery-area .delivery-box  img{
+.delivery-area .delivery-box  img {
   width: 100%;
+  padding: 4%;
+  border: 1px solid #e2578b;
+  border-radius: 6px;
+}
+.delivery-area .delivery-box .img-other {
+  padding: 0 8% 0 0;
 }
 .delivery-area .delivery-box h4 {
   text-align: center;
@@ -335,10 +341,13 @@ h2:after {
   color: #a9926e;
   font-weight: bold;
   letter-spacing: 0.05em;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 .delivery-area .delivery-box p {
   color: #e2578b;
+  margin-bottom: 6%;
+  line-height: 1.2;
+  text-align: justify;
 }
 /* ======================================
 index css ここまで
