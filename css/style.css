@@ -1,0 +1,328 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap');
+
+/* ======================================
+reset css
+====================================== */
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+  }
+
+/* ======================================
+body footer css
+====================================== */
+html {
+  width: 100%;
+}
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Noto Sans', sans-serif;
+  line-height: 1;
+}
+footer {
+  text-align: center;
+  margin: 100px auto 20px;
+  font-size: 10px;
+  color: #555;
+}
+@media screen and (max-width: 600px) {
+  body {
+    /* background: linear-gradient( #bfc1ff, #b4f7f8); */
+    
+  }
+}
+
+/* ======================================
+header css
+====================================== */
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+
+
+/* ======================================
+index css ここから
+====================================== */
+.mv-area {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  background-image: url(/img/bg-mv.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.mv-area .title-box {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20% 0;
+  text-align: center;
+}
+.mv-area .title-box h1 {
+  margin: 0 auto;
+  color: #fff;
+  font-size:6vw;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 2%;
+}
+.mv-area .title-box .logo img {
+  width: 80%;
+  display: block;
+  margin: 4% auto 4%;
+}
+.mv-area .title-box p {
+  font-size: 8vw;
+  color: #fffb77;
+}
+.mv-area  .sub-mv-text {
+  background-color: #a9926e;
+  padding: 4% 6%;
+  font-size: 4vw;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+h2 {
+  color: #a9926e;
+  margin: 0 auto 20%;
+  font-weight: bold;
+  font-size: 6vw;
+  text-align: center;
+  position: relative;
+}
+h2:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px; 
+  display: inline-block;
+  width: 20vw;
+  height: 2px;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translate(-50%); 
+  background-color: #666666; 
+}
+.lunch-area {
+  margin: 10% auto 16%;
+  width: 100%;
+  color: #444;
+}
+.delivery-area, .shop-area, .link-area{
+  margin: 10% auto 16%;
+  width: 90%;
+  color: #444;
+}
+.lunch-area li{
+  position: relative;
+  width: 90%;
+  margin: 0 8px 1%;
+  height: 58vh;
+  border-radius: 20px;
+  background-color: #e4d5bc;
+}
+.lunch-area .img-box-lunch {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 6%;
+  border-radius: 20px 20px 0 0;
+}
+.lunch-area .img-box-lunch img {
+  width: 100%;
+  background-color: #ffbf5a;
+}
+.lunch-area .text-box-lunch {
+  padding: 0 16px 20px;
+}
+.lunch-area .text-box-lunch h3 {
+  font-size: 5.4vw;
+  font-weight: bold;
+  margin-bottom: 3%;
+  line-height: 1.5;
+}
+.lunch-area .text-box-lunch p {
+  font-size: 4vw;
+  line-height: 1.5;
+  margin-bottom: 2%;
+}
+.lunch-area .text-box-lunch .price {
+  font-size: 5.4vw;
+  font-weight: bold;
+  margin-right: 2%;
+}
+.lunch-area .icon-lunch {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align:center;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  top: -10%;
+  left: -2%;
+}
+.icon-orange {
+  background-color: #eb6100;
+}
+.icon-green {
+  background-color: #6caa27;
+}
+.icon-pink {
+  background-color: #d30366;
+}
+.concept-area {
+  width: 100%;
+}
+.concept-area .text {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.5;
+  margin-bottom: 4%;
+}
+.concept-area ul li {
+  margin-bottom: 10%;
+  position: relative;
+  height: 36vh;
+}
+.concept-area ul li .text-box-concept {
+  width: 80%;
+  padding: 6% 4% 6% 10%;
+  display: block;
+  background-color:rgba(222,203,172,0.8);
+  position: absolute;
+  z-index: 10;
+}
+.concept-area ul li:nth-child(odd) .text-box-concept {
+  top: 0;
+  left: 0;
+}
+.concept-area ul li:nth-child(even) .text-box-concept {
+  top: 0;
+  right: 0;
+}
+.concept-area ul li .text-box-concept h3 {
+  font-size: 5.4vw;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+.concept-area ul li .text-box-concept p {
+  line-height: 1.5;
+  font-size: 4vw;
+}
+.concept-area ul li .img-box-concept {
+  width: 90%;
+  height: 28vh;
+  overflow: hidden;
+  position: absolute;
+}
+.concept-area ul li:nth-child(odd) .img-box-concept{
+  top: 20%;
+  right: 0;
+}
+.concept-area ul li:nth-child(even) .img-box-concept {
+  top: 20%;
+  right: 0;
+}
+.concept-area ul li .img-box-concept img {
+  width: 100%;
+}
+.delivery-area .delivery-box {
+  background-color: #d7cec1;
+  padding: 5%;
+  border-radius: 6px;
+  margin-bottom: 10%;
+}
+.delivery-area .delivery-box .delivery-list {
+  margin-bottom: 4%;
+  line-height: 1.5;
+ font-weight: bold;
+}
+.delivery-area .delivery-box .delivery-list li {
+  text-indent: -1em;
+  padding-left: 2em;
+}
+.delivery-area .delivery-box .delivery-list-sub {
+  line-height: 1.5;
+  font-size: 3.6vw;
+}
+.delivery-area h3 {
+  text-align: center;
+  font-size: 5vw;
+  margin-bottom: 4%;
+  font-weight: bold;
+  color:#e2578b;
+}
+/* ======================================
+index css ここまで
+====================================== */
+
+/* ======================================
+slider css ここから
+====================================== */
+.center { margin: 0 0 50px;}
+.center img { width: 100%; height: auto;}
+.center .slick-next { right: 20px; z-index: 99;}
+.center .slick-prev { left: 15px; z-index: 100;}
+
+
+/* ======================================
+profile css ここから
+====================================== */
+
+
+
+
