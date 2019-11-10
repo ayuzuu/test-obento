@@ -306,6 +306,40 @@ h2:after {
   font-weight: bold;
   color:#e2578b;
 }
+.delivery-area .area-box-delivery {
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;;
+  padding: 4%;
+}
+.delivery-area .delivery-box .area-box-delivery {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 4%;
+  margin-bottom: 10%;
+}
+.delivery-area .delivery-box  img{
+  width: 100%;
+}
+.delivery-area .delivery-box h4 {
+  text-align: center;
+  font-size: 5vw;
+  color: #333;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 5%;
+}
+.delivery-area .delivery-box h5 {
+  text-align: left;
+  font-size: 5vw;
+  color: #a9926e;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  margin-bottom: 5%;
+}
+.delivery-area .delivery-box p {
+  color: #e2578b;
+}
 /* ======================================
 index css ここまで
 ====================================== */
