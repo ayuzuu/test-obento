@@ -115,12 +115,12 @@ index css ここから
   font-size:6vw;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 2%;
+  margin-bottom: 8%;
 }
 .mv-area .title-box .logo img {
   width: 80%;
   display: block;
-  margin: 4% auto 4%;
+  margin: 4% auto 10%;
 }
 .mv-area .title-box p {
   font-size: 8vw;
@@ -172,7 +172,8 @@ h2:after {
   margin: 0 8px 1%;
   height: 58vh;
   border-radius: 20px;
-  background-color: #e4d5bc;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 .lunch-area .img-box-lunch {
   width: 100%;
@@ -291,13 +292,33 @@ h2:after {
   line-height: 1.5;
  font-weight: bold;
 }
-.delivery-area .delivery-box .delivery-list li {
-  text-indent: -1em;
-  padding-left: 2em;
+.delivery-area .delivery-box .delivery-list p {
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+.delivery-area .delivery-box .delivery-list p:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  font-weight: 900;
+  padding-right : 5px;/*文字との隙間*/
+  color: #e2578b;/*アイコンの色*/
 }
 .delivery-area .delivery-box .delivery-list-sub {
   line-height: 1.5;
   font-size: 3.6vw;
+}
+.delivery-area .delivery-box .delivery-list-sub li {
+  display: inline-block;
+}
+.delivery-area .delivery-box .delivery-list-sub p{
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+  color: #444;
+  margin-bottom: 1%;
+}
+.delivery-area .delivery-box .delivery-list-sub p:before {
+  content: "■";
+  color: #444;/*アイコンの色*/
 }
 .delivery-area h3 {
   text-align: center;
@@ -324,7 +345,8 @@ h2:after {
   border: 1px solid #e2578b;
   border-radius: 6px;
 }
-.delivery-area .delivery-box .img-other {
+.delivery-area .delivery-box .img-other,
+.delivery-area .delivery-box .img-hyogo {
   padding: 0 8% 0 0;
 }
 .delivery-area .delivery-box h4 {
@@ -337,16 +359,16 @@ h2:after {
 }
 .delivery-area .delivery-box h5 {
   text-align: left;
-  font-size: 5vw;
+  font-size: 4.6vw;
   color: #a9926e;
   font-weight: bold;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.1em;
   margin-bottom: 4%;
 }
 .delivery-area .delivery-box p {
   color: #e2578b;
   margin-bottom: 6%;
-  line-height: 1.2;
+  line-height: 1.4;
   text-align: justify;
 }
 /* ======================================
