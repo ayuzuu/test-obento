@@ -282,7 +282,7 @@ h2:after {
   width: 100%;
 }
 .delivery-area .delivery-box {
-  background-color: #d7cec1;
+  background-color: #ffe7f0;
   padding: 5%;
   border-radius: 6px;
   margin-bottom: 10%;
@@ -295,6 +295,8 @@ h2:after {
 .delivery-area .delivery-box .delivery-list p {
   padding-left: 1.2em;
   text-indent: -1.2em;
+  font-size: 4.2vw;
+  margin-bottom: 4%;
 }
 .delivery-area .delivery-box .delivery-list p:before {
   font-family: "Font Awesome 5 Free";
@@ -328,15 +330,12 @@ h2:after {
   color:#e2578b;
 }
 .delivery-area .area-box-delivery {
-  background-color: #fff;
   border-radius: 6px 6px 0 0;;
   padding: 4%;
 }
 .delivery-area .delivery-box .area-box-delivery {
   width: 100%;
-  background-color: #fff;
   border-radius: 6px;
-  padding: 6% 5%;
   margin-bottom: 10%;
 }
 .delivery-area .delivery-box  img {
@@ -344,22 +343,15 @@ h2:after {
   padding: 4%;
   border: 1px solid #e2578b;
   border-radius: 6px;
+  background-color: #fff;
 }
 .delivery-area .delivery-box .img-other,
 .delivery-area .delivery-box .img-hyogo {
   padding: 0 8% 0 0;
 }
 .delivery-area .delivery-box h4 {
-  text-align: center;
-  font-size: 5vw;
-  color: #333;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  margin-bottom: 5%;
-}
-.delivery-area .delivery-box h5 {
   text-align: left;
-  font-size: 4.6vw;
+  font-size: 5vw;
   color: #a9926e;
   font-weight: bold;
   letter-spacing: 0.1em;
@@ -370,6 +362,31 @@ h2:after {
   margin-bottom: 6%;
   line-height: 1.4;
   text-align: justify;
+}
+.shop-area h3 {
+  font-size: 4.4vw;
+  font-weight: bold;
+}
+.shop-area .shop-img-adress {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #a9926e;
+  padding: 4% 6%;
+  font-size: 4vw;
+  color: #fff;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  border-radius: 6px;
+}
+.shop-area .shop-img-adress .img-box {
+  width: 36%;
+}
+.shop-area .shop-img-adress .img-box img {
+  width: 100%;
+}
+.shop-area .shop-img-adress .adress-box {
+  width: 60%;
+  color: #444;
 }
 /* ======================================
 index css ここまで
