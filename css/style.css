@@ -190,13 +190,14 @@ index css ここから
 }
 .mv-area .title-box h1 {
   font-family: 'Noto Serif', serif;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0 auto;
+  letter-spacing: 0.02em;
   color: #fff;
   font-size:6vw;
-  font-weight: bold;
   line-height: 1.2;
   margin-bottom: 8%;
+  text-shadow: 0px 3px 15px rgb(65, 58, 46,0.8);
 }
 .mv-area .title-box .logo img {
   width: 80%;
