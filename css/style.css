@@ -85,10 +85,57 @@ footer {
 header css
 ====================================== */
 header {
-  width: 100%;
   position: fixed;
-  background-color: #fff;
+  top: 0;
+  box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.12);
+  z-index: 999;
 }
+header .logo-tel-area {
+  width: 100%;
+  padding: 5% 4%;
+  display: block;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+header .logo-tel-area img.logo {
+  width: 30%;
+}
+header .logo-tel-area .tel {
+  width: 62%;
+  position: relative;
+}
+header .logo-tel-area .tel:before {
+  content: '';
+  width: 10vw;
+  height: 8vh;
+  background-image: url(/img/icon-tel.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: contain;
+  margin-right: 6px;
+  position: absolute;
+  top: 0;
+}
+header .logo-tel-area .tel .tel-text {
+  padding-left: 20%;
+  font-size: 3vw;
+  font-weight: bold;
+  color: #a9926e;
+  margin-bottom: 4%;
+  letter-spacing: 0.04em;
+}
+header .logo-tel-area .tel .tel-text span {
+  color: #ffb357;
+}
+header .logo-tel-area .tel .number {
+  padding-left: 20%;
+  color: #a9926e;
+  font-size: 5.1vw;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
 
 
 
