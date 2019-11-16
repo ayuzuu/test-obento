@@ -64,7 +64,7 @@ html {
 body {
   width: 100%;
   margin: 0 auto;
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1;
 }
 footer {
@@ -227,7 +227,7 @@ index css ここから
 }
 .mv-area  .sub-mv-text {
   background-color: #a9926e;
-  padding: 2% 6%;
+  padding: 2% 6% 4%;
   font-size: 4vw;
   color: #fff;
   letter-spacing: 0.05em;
@@ -241,10 +241,12 @@ index css ここから
 h2 {
   color: #a9926e;
   margin: 14% auto 20%;
-  font-weight: bold;
-  font-size: 6vw;
+  font-family: 'Noto Serif', serif;
+  font-weight: 900;
+  font-size: 6.4vw;
   text-align: center;
   position: relative;
+  letter-spacing: 0.1em;
 }
 h2:after {
   content: '';
@@ -290,7 +292,8 @@ h2:after {
   padding: 0 16px 20px;
 }
 .lunch-area .text-box-lunch h3 {
-  font-size: 5.4vw;
+  font-size: 5vw;
+  letter-spacing: 0.05em;
   font-weight: bold;
   margin-bottom: 3%;
   line-height: 1.5;
@@ -301,7 +304,7 @@ h2:after {
   margin-bottom: 2%;
 }
 .lunch-area .text-box-lunch .price {
-  font-size: 5.4vw;
+  font-size: 5vw;
   font-weight: bold;
   margin-right: 2%;
 }
@@ -353,7 +356,10 @@ h2:after {
 .concept-area ul li .text-box-concept h3 {
   font-size: 5.4vw;
   font-weight: bold;
+  font-family: 'Noto Serif', serif;
+  letter-spacing: 0.1em;
   margin-bottom: 4%;
+  text-shadow: 0px 0px 4px rgb(213, 188, 147);
 }
 .concept-area ul li .text-box-concept p {
   line-height: 1.5;
@@ -377,9 +383,8 @@ h2:after {
   width: 100%;
 }
 .delivery-area .delivery-box {
-  background-color: #ffe7f0;
+  background-color: #fce9f0;
   padding: 5%;
-  border-radius: 6px;
   margin-bottom: 10%;
 }
 .delivery-area .delivery-box .delivery-list {
@@ -419,10 +424,11 @@ h2:after {
 }
 .delivery-area h3 {
   text-align: center;
-  font-size: 5vw;
+  font-size: 4.8vw;
   margin-bottom: 4%;
   font-weight: bold;
   color:#e2578b;
+  letter-spacing: 0.05em;
 }
 .delivery-area .area-box-delivery {
   border-radius: 6px 6px 0 0;;
