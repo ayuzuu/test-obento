@@ -46,24 +46,25 @@
             </a>
         </div>
         <ul class="nav">
-            <li><a href="#nav2">お弁当一覧</a></li>
-            <li><a href="#nav3">コンセプト</a></li>
-            <li><a href="/entry/?lp=mama-nav">配達について</a></li>
+            <li><a href="#nav1">お弁当一覧</a></li>
+            <li><a href="#nav2">コンセプト</a></li>
+            <li><a href="#nav3">配達について</a></li>
         </ul>
     </header>
 
     <section class="mv-area">
         <div class="title-box">
-            <h1>「おいしい」から生まれる、コミュニケーション</h1>
+            <h1>「おいしい」から生まれる、<br>コミュニケーション</h1>
             <div class="logo"><img src="/img/logo2.svg" alt="四季彩Kappo"></div>
             <p>NEW OPEN!</p>
         </div>
         <div class="sub-mv-text">
+            <img class="logo" src="/img/icon-car.png">
             <p>会議・セミナー・来客用のお弁当をいつもとは少し違うものにして見ませんか？</p>
         </div>
     </section>
 
-    <section class="lunch-area">
+    <section id="nav1" class="lunch-area anchor">
         <h2>お弁当一覧</h2>
         <ul>
             <li>
@@ -134,9 +135,8 @@
 
         </ul>
     </section>
-    <section class="concept-area">
+    <section id="nav2" class="concept-area anchor">
         <h2>kappoのこだわり</h2>
-        <p class="text">お弁当の説明が入りますお弁当の説明が入りますお弁当の説明が入りますお弁当の説明が入りますお弁当の説明が入りますお弁当の</p>
         <ul class="concept-list">
             <li>
                 <div class="text-box-concept">
@@ -144,7 +144,7 @@
                     <p>好立地を生かし食材を調達しております。能勢、豊能、三田、丹波篠山の農家との直接契約により、旬の食材を仕入れています。</p>
                 </div>
                 <div class="img-box-concept">
-                    <img src="/img/img-concept01.png" alt="">
+                    <img src="/img/bg-ingredient.png" alt="食材">
                 </div>
             </li>
             <li>
@@ -153,7 +153,7 @@
                     <p>お食材を生かす炭火調理。北摂の菊炭を使用しております。火力の強さ、持続性、香りの良さが特徴で、食材を美味しく焼き上げます。</p>
                 </div>
                 <div class="img-box-concept">
-                    <img src="/img/img-concept01.png" alt="">
+                    <img src="/img/bg-charcoal.png" alt="炭火">
                 </div>
             </li>
             <li>
@@ -162,12 +162,12 @@
                     <p>お客様より直接ご注文をお受けすることにより、迅速なご対応が可能です。また、急なご注文にも可能な限りお応えさせていただきます。</p>
                 </div>
                 <div class="img-box-concept">
-                    <img src="/img/img-concept01.png" alt="">
+                    <img src="/img/img-concept01.png" alt="サービス">
                 </div>
             </li>
         </ul>
     </section>
-    <section class="delivery-area">
+    <section id="nav3" class="delivery-area anchor">
         <h2>配達について</h2>
         <div class="delivery-box">
             <ul class="delivery-list">
@@ -207,35 +207,39 @@
                     <img class="img-hyogo" src="/img/img-map-hyogo.png" alt="">
                 </div>
     </section>
-    <section class="shop-area">
-        <h2>店舗情報</h2>
-        <div class="shop-img-adress">
-            <div class="img-box">
-                <img src="/img/img-concept01.png" alt="">
-            </div>
-            <div class="adress-box">
-                <h3>炭火 kappo 四季彩</h3>
-                <ul>
-                    <li>Tel 000-1234-5678</li>
-                    <li>営業時間 : 9:00～ 20:00</li>
-                    <li>定休日 : 土・日・祝</li>
-                    <li><span>〒666-0124</span>兵庫県川西市多田桜木2丁目1-27 堀田ビル1F</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <div class="link-area">
-        <div class="blog">
-            <a href=""><img src="" alt="お弁当ブログ"></a>
-        </div>
-        <div class="line">
-            line情報
-        </div>
-
-    </div>
+    
     <footer>
         Copyright ©2019 Kappo Shikisai All Rights Reserved.
     </footer>
+
+    <!-- ページ内スクロール -->
+    <script>
+        $(function(){
+            smoothScroll();  
+        });
+
+        function smoothScroll(){
+            $('a[href^="#"]').on('click', function(){
+                // scroll speed
+                var speed = 400;
+                // get anchor-tag value
+                var href = $(this).attr('href');
+                // get target
+                var target = $(href == '#' || href == '' ? 'html' : href);
+                // get target position
+                var position = target.offset().top;
+                // smooth scroll
+                $('body, html').animate({scrollTop:position}, speed, 'swing');
+                // URLにハッシュを追記
+                var scrollTargetId = target.attr("id");
+                setTimeout(function(){
+                    location.hash = scrollTargetId;
+                    return false;
+                },500);
+                return false;
+            });
+        }
+    </script>
 </body>
 
 </html>

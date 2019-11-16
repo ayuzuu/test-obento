@@ -69,9 +69,10 @@ body {
 }
 footer {
   text-align: center;
-  margin: 100px auto 20px;
-  font-size: 10px;
-  color: #555;
+  font-size: 12px;
+  color: #fff;
+  background-color: #a9926e;
+  padding: 8% 0 8%;
 }
 @media screen and (max-width: 600px) {
   body {
@@ -140,10 +141,24 @@ header .nav {
   background-color:rgba(200, 2, 18,0.9);
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 header .nav li {
   width: calc(90% / 3);
   position: relative;
+}
+header .nav li:before {
+  content: '';
+  display: inline-block;
+  height: 8vw;
+  width: 2px;
+  background-color: #fff;
+  left: -8%;
+  top: 18%;
+  position: absolute;
+}
+header .nav li:first-child:before {
+  display: none;
 }
 header .nav li a:after {
   content: '';
@@ -155,6 +170,7 @@ header .nav li a:after {
   display: block;
   text-align: center;
   margin: 8% auto 0;
+  opacity: 0.7;
 }
 header .nav li a {
   display: block;
@@ -183,7 +199,7 @@ index css ここから
   position: relative;
 }
 .mv-area .title-box {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 25% 0 10%;
   text-align: center;
@@ -194,15 +210,15 @@ index css ここから
   margin: 0 auto;
   letter-spacing: 0.02em;
   color: #fff;
-  font-size:6vw;
+  font-size:6.4vw;
   line-height: 1.2;
   margin-bottom: 8%;
   text-shadow: 0px 3px 15px rgb(65, 58, 46,0.8);
 }
 .mv-area .title-box .logo img {
-  width: 80%;
+  width: 50%;
   display: block;
-  margin: 4% auto 10%;
+  margin: 0 auto 6%;
 }
 .mv-area .title-box p {
   font-size: 8vw;
@@ -210,15 +226,20 @@ index css ここから
 }
 .mv-area  .sub-mv-text {
   background-color: #a9926e;
-  padding: 4% 6%;
+  padding: 2% 6%;
   font-size: 4vw;
   color: #fff;
   letter-spacing: 0.05em;
   line-height: 1.5;
+  text-align: center;
+}
+.mv-area  .sub-mv-text img {
+  text-align: center;
+  width: 14%;
 }
 h2 {
   color: #a9926e;
-  margin: 0 auto 20%;
+  margin: 14% auto 20%;
   font-weight: bold;
   font-size: 6vw;
   text-align: center;
@@ -307,14 +328,8 @@ h2:after {
 .concept-area {
   width: 100%;
 }
-.concept-area .text {
-  width: 90%;
-  margin: 0 auto;
-  line-height: 1.5;
-  margin-bottom: 4%;
-}
 .concept-area ul li {
-  margin-bottom: 10%;
+  margin-bottom: 18%;
   position: relative;
   height: 36vh;
 }
@@ -350,11 +365,11 @@ h2:after {
   position: absolute;
 }
 .concept-area ul li:nth-child(odd) .img-box-concept{
-  top: 20%;
+  top: 30%;
   right: 0;
 }
 .concept-area ul li:nth-child(even) .img-box-concept {
-  top: 20%;
+  top: 30%;
   left: 0;
 }
 .concept-area ul li .img-box-concept img {
@@ -481,9 +496,13 @@ slider css ここから
 
 
 /* ======================================
-profile css ここから
+スムーススクロール位置
 ====================================== */
-
+.anchor {
+  display: block;
+  padding-top: 220px;
+  margin-top: -220px;
+}
 
 
 
