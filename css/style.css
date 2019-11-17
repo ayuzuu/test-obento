@@ -230,6 +230,9 @@ index css ここから
 }
 #container ul.sm-slider {
   position: relative;
+  position: relative;
+  height: 80vh;
+  z-index: -1;
 }
 .mv-area {
   width: 100%;
