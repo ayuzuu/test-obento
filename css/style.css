@@ -96,10 +96,11 @@ footer a.circle {
   z-index: 5;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 1000px) {
   body {
     /* background: linear-gradient( #bfc1ff, #b4f7f8); */
     font-family: 'Noto Sans';
+    background-color: #444;
   }
 }
 
@@ -206,21 +207,37 @@ header .nav li a {
   letter-spacing: 0.1em;
   padding: 10% 0 4%;
 }
-
+/* @media screen and (min-width: 1000px) {
+  body {
+    width: 960px;
+  }
+  header {
+    width: 960px;
+  }
+} */
 
 
 /* ======================================
 index css ここから
 ====================================== */
+#container {
+  width: 100%;
+  height: 80vh;
+  overflow: hidden;
+  position: absolute;
+  top: -10px;
+  background-position: 50% 50%;
+}
+#container ul.sm-slider {
+  position: relative;
+}
 .mv-area {
   width: 100%;
   margin: 0 auto;
   display: block;
-  background-image: url(/img/bg-mv.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 16%;
   position: relative;
+  z-index: 100;
 }
 .mv-area .title-box {
   width: 90%;

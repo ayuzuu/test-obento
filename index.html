@@ -23,6 +23,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="/js/kappo.js"></script>
     <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/slideshow.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('.lunch-area ul').slick({
@@ -47,7 +48,7 @@
         </div>
         <ul class="nav">
             <li><a href="#nav1">お弁当一覧</a></li>
-            <li><a href="#nav2">コンセプト</a></li>
+            <li><a href="#nav2">こだわり</a></li>
             <li><a href="#nav3">配達について</a></li>
         </ul>
     </header>
@@ -62,6 +63,7 @@
             <img class="logo" src="/img/icon-car.png">
             <p>会議・セミナー・来客用のお弁当をいつもとは少し違うものにしてみませんか？</p>
         </div>
+        <div id="container"></div>
     </section>
 
     <section id="nav1" class="lunch-area anchor">
@@ -240,6 +242,24 @@
                 return false;
             });
         }
+    </script>
+
+    <script>
+        $(function() {
+            $.sublime_slideshow({
+                src:[
+                { url:"/img/bg-mv.png" },
+                { url:"/img/bg-mv.png" },
+                { url:"/img/bg-mv.png" }
+                ],
+                duration: 6,
+                fade: 2,
+                scaling: 1.2,
+                rotating: false,
+                overlay:    ""
+            });
+            $("ul.sm-slider").appendTo("#container");
+        });
     </script>
 </body>
 
