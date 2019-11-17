@@ -96,13 +96,13 @@ footer a.circle {
   z-index: 5;
 }
 
-@media screen and (min-width: 1000px) {
+/* @media screen and (min-width: 1000px) {
   body {
-    /* background: linear-gradient( #bfc1ff, #b4f7f8); */
+    background: linear-gradient( #bfc1ff, #b4f7f8);
     font-family: 'Noto Sans';
     background-color: #444;
   }
-}
+} */
 
 
 /* ======================================
@@ -215,6 +215,53 @@ header .nav li a {
     width: 960px;
   }
 } */
+
+
+/* ======================================
+tel ここから
+====================================== */
+.tel-area {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5% 4%;
+  display: block;
+  background-color: #a9926e;
+  position: relative;
+  border-radius: 70px;
+}
+.tel-area:before {
+  content: '';
+  width: 8%;
+  height: 7vh;
+  background-image: url(/img/icon-tel-w.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: contain;
+  margin-right: 6px;
+  position: absolute;
+  top: 22%;
+  left: 12%;
+}
+.tel-area .tel-text {
+  padding-left: 24%;
+  font-size: 3.5vw;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 2%;
+  letter-spacing: 0.04em;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+.tel-area .tel-text span {
+  color: #ffb357;
+}
+.tel-area .number {
+  padding-left: 24%;
+  color: #fff;
+  font-size: 6.8vw;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+  font-family: 'Noto Sans JP', sans-serif;
+}
 
 
 /* ======================================
@@ -513,18 +560,16 @@ h2:after {
   font-weight: bold;
 }
 .shop-area .adress-box {
+  width: 100%;
+  color: #444;
   justify-content: space-between;
   border: 1px solid #a9926e;
   padding: 4% 6%;
   font-size: 4vw;
-  color: #fff;
   letter-spacing: 0.05em;
   line-height: 1.5;
   border-radius: 6px;
-}
-.shop-area .adress-box {
-  width: 100%;
-  color: #444;
+  margin-bottom: 10%;
 }
 .shop-area .adress-box li span {
   display: block;
