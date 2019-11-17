@@ -1,6 +1,6 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,900|Noto+Serif:400,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP:700,900&display=swap');
 /* ======================================
 reset css
 ====================================== */
@@ -65,6 +65,7 @@ body {
   width: 100%;
   margin: 0 auto;
   font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
   line-height: 1;
 }
 footer {
@@ -222,7 +223,7 @@ tel ここから
 ====================================== */
 .tel-area {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 20%;
   padding: 5% 4%;
   display: block;
   background-color: #a9926e;
@@ -296,20 +297,19 @@ index css ここから
   text-align: center;
 }
 .mv-area .title-box h1 {
-  font-family: 'Noto Serif', serif;
-  font-weight: 900;
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 700;
   margin: 0 auto;
   letter-spacing: 0.02em;
   color: #fff;
   font-size:6.4vw;
   line-height: 1.2;
-  margin-bottom: 8%;
   text-shadow: 0px 3px 15px rgb(65, 58, 46,0.8);
 }
 .mv-area .title-box .logo img {
   width: 60%;
   display: block;
-  margin: 0 auto 6%;
+  margin: 8% auto 6%;
 }
 .mv-area .title-box p {
   font-size: 5.6vw;
@@ -333,7 +333,7 @@ index css ここから
 h2 {
   color: #a9926e;
   margin: 14% auto 20%;
-  font-family: 'Noto Serif', serif;
+  font-family: 'Noto Serif JP', serif;
   font-weight: 900;
   font-size: 6.4vw;
   text-align: center;
@@ -447,8 +447,8 @@ h2:after {
 }
 .concept-area ul li .text-box-concept h3 {
   font-size: 5.4vw;
-  font-weight: bold;
-  font-family: 'Noto Serif', serif;
+  font-weight: 900;
+  font-family: 'Noto Serif JP', serif;
   letter-spacing: 0.1em;
   margin-bottom: 4%;
   text-shadow: 0px 0px 4px rgb(213, 188, 147);
