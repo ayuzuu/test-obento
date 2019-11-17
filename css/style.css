@@ -365,7 +365,6 @@ h2:after {
   position: relative;
   width: 90%;
   margin: 0 8px 1%;
-  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
@@ -373,7 +372,6 @@ h2:after {
   width: 100%;
   overflow: hidden;
   margin-bottom: 6%;
-  border-radius: 20px 20px 0 0;
 }
 .lunch-area .img-box-lunch img {
   width: 100%;
