@@ -121,6 +121,8 @@ header .logo-tel-area {
   padding: 3% 4%;
   display: block;
   background-color: #fff;
+}
+header .logo-tel-inner {
   display: flex;
   justify-content: space-between;
 }
@@ -208,14 +210,55 @@ header .nav li a {
   letter-spacing: 0.1em;
   padding: 10% 0 4%;
 }
-/* @media screen and (min-width: 1000px) {
-  body {
-    width: 960px;
-  }
+@media screen and (min-width: 800px) {
   header {
-    width: 960px;
+    text-align: center;
+    margin: 0 auto;
   }
-} */
+  header .logo-tel-area {
+    padding: 1.8% 4%;
+  }
+  header .logo-tel-inner {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  header .logo-tel-area img.logo {
+    width: 220px;
+  }
+  header .logo-tel-area .tel {
+    width: 290px;
+  }
+  header .logo-tel-area .tel:before {
+    width: 58px;
+    height: 52px;
+    position: absolute;
+    left: 18px;
+  }
+  header .logo-tel-area .tel .tel-text {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    padding-left: 70px;
+  }
+  header .logo-tel-area .tel .number {
+    font-size: 28px;
+    padding-left: 70px;
+  }
+  header .nav li a {
+    font-size: 16px;
+    padding: 4% 0 2%;
+  }
+  header .nav li a:after {
+    width: 24px;
+    height: 10px;
+    margin: 10px auto 0;
+  }
+  header .nav li:before {
+    height: 34px;
+  }
+}
 
 
 /* ======================================
@@ -330,6 +373,34 @@ index css ここから
   text-align: center;
   width: 14%;
 }
+@media screen and (min-width: 800px) {
+  #container {
+    height: 90vw;
+  }
+  .mv-area .title-box h1 {
+    font-size: 38px;
+  }
+  .mv-area .title-box h1 .logo {
+    width: 440px;
+    margin: 0 auto;
+  }
+  .mv-area .title-box {
+    padding: 10% 0 10%;
+  }
+  .mv-area .sub-mv-text img {
+    width: 80px;
+  }
+  .mv-area .sub-mv-text {
+    font-size: 18px;
+  }
+  .mv-area .title-box p {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+}
+
 h2 {
   color: #a9926e;
   margin: 14% auto 20%;
@@ -351,6 +422,15 @@ h2:after {
   transform: translate(-50%); 
   background-color: #666666; 
 }
+@media screen and (min-width: 800px) {
+  h2 {
+    font-size: 38px;
+  }
+  h2:after {
+    width: 100px;
+  }
+}
+
 .lunch-area {
   margin: 10% auto 10%;
   width: 100%;
@@ -392,33 +472,18 @@ h2:after {
   font-size: 4vw;
   line-height: 1.5;
   margin-bottom: 2%;
+  text-align: justify;
+}
+.lunch-area .text-box-lunch p.text {
+  height: 100px;
 }
 .lunch-area .text-box-lunch .price {
   font-size: 5vw;
   font-weight: bold;
   margin-right: 2%;
 }
-.lunch-area .icon-lunch {
-  color: #fff;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  text-align:center;
-  line-height: 60px;
-  position: absolute;
-  top: 0;
-  top: -10%;
-  left: -2%;
-}
-.icon-orange {
-  background-color: #eb6100;
-}
-.icon-green {
-  background-color: #6caa27;
-}
-.icon-pink {
-  background-color: #d30366;
-}
+
+
 .concept-area {
   width: 100%;
 }
@@ -472,6 +537,40 @@ h2:after {
 .concept-area ul li .img-box-concept img {
   width: 100%;
 }
+@media screen and (min-width: 800px) {
+  .concept-area {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .concept-area ul li {
+    height: 300px;
+  }
+  .concept-area ul li:nth-child(2) {
+    height: 350px;
+  }
+  .concept-area ul li .text-box-concept {
+    width: 600px;
+    padding: 60px;
+  }
+  .concept-area ul li .text-box-concept h3 {
+    font-size: 24px;
+  }
+  .concept-area ul li .text-box-concept p {
+    font-size: 14px;
+  }
+  .concept-area ul li .img-box-concept {
+    width: 600px;
+    height: 300px;
+  }
+  .concept-area ul li .img-box-concept img {
+    width: 100%;
+  }
+  .concept-area ul li:nth-child(odd) .img-box-concept {
+    top: 20%;
+  }
+}
+
+
 .delivery-area .delivery-box {
   background-color: #e7e1d8;
   padding: 5%;
@@ -497,14 +596,15 @@ h2:after {
 }
 .delivery-area .delivery-box .delivery-list-sub {
   line-height: 1.5;
-  font-size: 3.6vw;
+  font-size: 3.4vw;
 }
 .delivery-area .delivery-box .delivery-list-sub li {
   display: inline-block;
+  margin-bottom: 2%;
 }
 .delivery-area .delivery-box .delivery-list-sub p{
-  padding-left: 1.2em;
-  text-indent: -1.2em;
+  padding-left: 1em;
+  text-indent: -1em;
   color: #444;
   margin-bottom: 1%;
 }
@@ -553,6 +653,41 @@ h2:after {
   line-height: 1.4;
   text-align: justify;
 }
+@media screen and (min-width: 800px) {
+  .delivery-area .area-box-delivery {
+    text-align: center;
+  }
+  .delivery-area .delivery-box img {
+    width: 500px;
+  }
+  .delivery-area .delivery-box .delivery-list {
+    padding: 20px 100px;
+    background-color: #f7f7f7;
+  }
+  .delivery-area .delivery-box .delivery-list p {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .delivery-area .delivery-box .delivery-list-sub {
+    font-size: 14px;
+  }
+  .delivery-area .delivery-box .delivery-list-sub li {
+    display: block;
+    margin-bottom: 0;
+  }
+  .delivery-area h3 {
+    font-size: 26px;
+  }
+  .delivery-area .delivery-box h4 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .delivery-area .delivery-box p {
+    width: 500px;
+    margin: 0 auto 20px;
+  }
+}
+
 .shop-area h3 {
   font-size: 4.4vw;
   font-weight: bold;
@@ -571,6 +706,14 @@ h2:after {
 }
 .shop-area .adress-box li span {
   display: block;
+}
+@media screen and (min-width: 800px) {
+  .shop-area h3 {
+    font-size: 20px;
+  }
+  .shop-area .adress-box {
+    font-size: 16px;
+  }
 }
 /* ======================================
 index css ここまで
