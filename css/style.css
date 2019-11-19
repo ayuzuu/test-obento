@@ -366,6 +366,7 @@ index css ここから
   letter-spacing: 0.05em;
   line-height: 1.5;
   text-align: center;
+  text-shadow: 0px 0px 4px rgb(113, 97, 74);
 }
 .mv-area  .sub-mv-text img {
   text-align: center;
