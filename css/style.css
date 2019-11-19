@@ -130,13 +130,13 @@ header .logo-tel-area img.logo {
   width: 30%;
 }
 header .logo-tel-area .tel {
-  width: 62%;
+  width: 54%;
   position: relative;
 }
 header .logo-tel-area .tel:before {
   content: '';
-  width: 10vw;
-  height: 8vh;
+  width: 9vw;
+  height: 5vh;
   background-image: url(/img/icon-tel.png);
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -147,8 +147,7 @@ header .logo-tel-area .tel:before {
 }
 header .logo-tel-area .tel .tel-text {
   padding-left: 20%;
-  font-size: 3vw;
-  font-weight: bold;
+  font-size: 2.6vw;
   color: #a9926e;
   margin-bottom: 2%;
   letter-spacing: 0.04em;
@@ -160,13 +159,12 @@ header .logo-tel-area .tel .tel-text span {
 header .logo-tel-area .tel .number {
   padding-left: 20%;
   color: #a9926e;
-  font-size: 5.8vw;
+  font-size: 5.5vw;
   letter-spacing: 0.05em;
-  font-weight: bold;
   font-family: 'Noto Sans JP', sans-serif;
 }
 header .nav {
-  background-color:rgba(200, 2, 18,0.9);
+  background-color:rgba(208, 40, 54, 0.9);
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -193,16 +191,15 @@ header .nav li a:after {
   background-image: url(/img/icon-arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 5vw;
+  width: 4vw;
   height: 2vh;
   display: block;
   text-align: center;
-  margin: 8% auto 0;
+  margin: 6% auto 0;
   opacity: 0.7;
 }
 header .nav li a {
   display: block;
-  font-weight: bold;
   text-align: center;
   color: #fff;
   font-family: 'Noto Sans JP', sans-serif;
@@ -265,13 +262,13 @@ header .nav li a {
 tel ここから
 ====================================== */
 .tel-area {
-  width: 90%;
+  width: 80%;
   margin: 0 auto 20%;
-  padding: 5% 4%;
+  padding: 4% 4%;
   display: block;
   background-color: #a9926e;
   position: relative;
-  border-radius: 70px;
+  border-radius: 6px;
 }
 .tel-area:before {
   content: '';
@@ -283,13 +280,12 @@ tel ここから
   background-size: contain;
   margin-right: 6px;
   position: absolute;
-  top: 22%;
-  left: 12%;
+  top: 25%;
+  left: 14%;
 }
 .tel-area .tel-text {
   padding-left: 24%;
-  font-size: 3.5vw;
-  font-weight: bold;
+  font-size: 3.3vw;
   color: #fff;
   margin-bottom: 2%;
   letter-spacing: 0.04em;
@@ -303,7 +299,6 @@ tel ここから
   color: #fff;
   font-size: 6.8vw;
   letter-spacing: 0.05em;
-  font-weight: bold;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
@@ -363,7 +358,7 @@ index css ここから
 .mv-area  .sub-mv-text {
   background-color: #a9926e;
   padding: 2% 6% 4%;
-  font-size: 4vw;
+  font-size: 3.8vw;
   color: #fff;
   letter-spacing: 0.05em;
   line-height: 1.5;
@@ -455,7 +450,7 @@ h2:after {
 }
 .lunch-area .img-box-lunch img {
   width: 100%;
-  background-color: #d33c49;
+  background-color: #d34955;
 }
 .lunch-area .text-box-lunch {
   padding: 0 6% 10%;
