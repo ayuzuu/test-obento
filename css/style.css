@@ -148,6 +148,7 @@ header .logo-tel-area .tel:before {
 header .logo-tel-area .tel .tel-text {
   padding-left: 20%;
   font-size: 2.6vw;
+  font-weight: bold;
   color: #a9926e;
   margin-bottom: 2%;
   letter-spacing: 0.04em;
@@ -159,7 +160,8 @@ header .logo-tel-area .tel .tel-text span {
 header .logo-tel-area .tel .number {
   padding-left: 20%;
   color: #a9926e;
-  font-size: 5.5vw;
+  font-size: 5.4vw;
+  font-weight: bold;
   letter-spacing: 0.05em;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -286,6 +288,7 @@ tel ここから
 .tel-area .tel-text {
   padding-left: 24%;
   font-size: 3.3vw;
+  font-weight: bold;
   color: #fff;
   margin-bottom: 2%;
   letter-spacing: 0.04em;
