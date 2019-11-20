@@ -715,6 +715,9 @@ h2:after {
   text-align: justify;
 }
 @media screen and (min-width: 800px) {
+  .delivery-area {
+    width: 960px;
+  }
   .delivery-area .area-box-delivery {
     text-align: center;
   }
@@ -769,6 +772,9 @@ h2:after {
   display: block;
 }
 @media screen and (min-width: 800px) {
+  .shop-area {
+    width: 960px;
+  }
   .shop-area h3 {
     font-size: 20px;
   }
