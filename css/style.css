@@ -382,10 +382,10 @@ index css ここから
 }
 @media screen and (min-width: 800px) {
   #container {
-    height: 800px;
+    height: 120vh;
   }
   .mv-area {
-    height: 900px;
+    height: 120vh;
   }
   .mv-area .title-box h1 {
     font-size: 38px;
@@ -395,7 +395,7 @@ index css ここから
     margin: 0 auto;
   }
   .mv-area .title-box {
-    padding: 50px 0 50px;
+    padding: 0% 0 8%;
   }
   .mv-area .sub-mv-text img {
     width: 80px;
@@ -444,6 +444,7 @@ h2:after {
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 38px;
+    margin: 110px auto 120px;
   }
   h2:after {
     width: 100px;
