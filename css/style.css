@@ -91,19 +91,22 @@ footer a.circle {
   line-height: 80px;
   position: absolute;
   top: -50%;
-  /* left: 0; */
-  right: 40%;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   color: #fff;
   z-index: 5;
 }
 
-/* @media screen and (min-width: 1000px) {
-  body {
-    background: linear-gradient( #bfc1ff, #b4f7f8);
-    font-family: 'Noto Sans';
-    background-color: #444;
+@media screen and (min-width: 800px) {
+  footer a.circle {
+    margin: 0 auto;
+    top: -14%;
+    text-align: center;
+    right: 0;
+    left: 0;
   }
-} */
+}
 
 
 /* ======================================
@@ -215,7 +218,7 @@ header .nav li a {
     margin: 0 auto;
   }
   header .logo-tel-area {
-    padding: 1.8% 4%;
+    padding: 10px;
   }
   header .logo-tel-inner {
     width: 960px;
@@ -225,7 +228,7 @@ header .nav li a {
     text-align: center;
   }
   header .logo-tel-area img.logo {
-    width: 220px;
+    width: 160px;
   }
   header .logo-tel-area .tel {
     width: 290px;
@@ -304,6 +307,11 @@ tel ここから
   letter-spacing: 0.06em;
   font-family: 'Noto Sans JP', sans-serif;
 }
+@media screen and (min-width: 800px) {
+  .tel-area {
+    display: none;
+  }
+}
 
 
 /* ======================================
@@ -374,7 +382,10 @@ index css ここから
 }
 @media screen and (min-width: 800px) {
   #container {
-    height: 90vw;
+    height: 800px;
+  }
+  .mv-area {
+    height: 900px;
   }
   .mv-area .title-box h1 {
     font-size: 38px;
@@ -384,7 +395,7 @@ index css ここから
     margin: 0 auto;
   }
   .mv-area .title-box {
-    padding: 10% 0 10%;
+    padding: 50px 0 50px;
   }
   .mv-area .sub-mv-text img {
     width: 80px;
@@ -397,6 +408,15 @@ index css ここから
   }
   h2 {
     font-size: 38px;
+    margin: 110px auto 120px;
+  }
+  .mv-area  .sub-mv-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .mv-area  .sub-mv-text .brpc {
+    display: none;
   }
 }
 
@@ -480,6 +500,47 @@ h2:after {
   font-size: 5vw;
   font-weight: bold;
   margin-right: 2%;
+}
+@media screen and (min-width: 800px) {
+  #pc-lunch-list {
+    width: 960px;
+    margin: 0 auto;
+  }
+  #pc-lunch-list li {
+    width: 850px;
+    margin: 20px auto 20px;
+    background-color: #fff;
+    box-shadow: 0;
+    display: flex;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+  }
+  #pc-lunch-list .img-box-lunch {
+    width: 420px;
+    overflow: hidden;
+    margin-bottom: 0;
+  }
+  #pc-lunch-list .img-box-lunch img {
+    height: 100%;
+    background-color: #d34955;
+  }
+  #pc-lunch-list .text-box-lunch {
+    width: 400px;
+    padding: 30px 20px;
+  }
+  #pc-lunch-list .text-box-lunch h3 {
+    font-size: 18px;
+    height: 30px;
+  }
+  #pc-lunch-list li:nth-child(even) .img-box-lunch img {
+    background-color: #d8cbb6;
+  }
+  #pc-lunch-list .text-box-lunch p {
+    font-size: 12px;
+    height: 60px;
+  }
+  #pc-lunch-list .text-box-lunch .price {
+    font-size: 20px;
+  }
 }
 
 
