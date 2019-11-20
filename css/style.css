@@ -464,7 +464,7 @@ h2:after {
   width: 90%;
   color: #444;
 }
-.lunch-area li{
+.lunch-area li {
   position: relative;
   width: 90%;
   margin: 0 8px 1%;
@@ -479,6 +479,9 @@ h2:after {
 .lunch-area .img-box-lunch img {
   width: 100%;
   background-color: #d34955;
+}
+.lunch-area li:nth-child(even) .img-box-lunch img {
+  background-color: #edd7b3;
 }
 .lunch-area .text-box-lunch {
   padding: 0 6% 10%;
@@ -536,7 +539,7 @@ h2:after {
     height: 30px;
   }
   #pc-lunch-list li:nth-child(even) .img-box-lunch img {
-    background-color: #d8cbb6;
+    background-color: #edd7b3;
   }
   #pc-lunch-list .text-box-lunch p {
     font-size: 12px;
