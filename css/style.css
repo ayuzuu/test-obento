@@ -391,9 +391,9 @@ index css ここから
   #container ul.sm-slider {
     height: 800px;
   }
-  /* .mv-area {
-    height: 120vh;
-  } */
+  .mv-area {
+    height: 790px;
+  }
   .mv-area .title-box h1 {
     font-size: 38px;
   }
