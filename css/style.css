@@ -330,7 +330,6 @@ index css ここから
 }
 #container ul.sm-slider {
   position: relative;
-  position: relative;
   height: 150vw;
   z-index: -1;
 }
@@ -387,7 +386,10 @@ index css ここから
 }
 @media screen and (min-width: 800px) {
   #container {
-    height: 100vw;
+    height: 800px;
+  }
+  #container ul.sm-slider {
+    height: 800px;
   }
   /* .mv-area {
     height: 120vh;
