@@ -387,11 +387,11 @@ index css ここから
 }
 @media screen and (min-width: 800px) {
   #container {
-    height: 120vh;
+    height: 100vw;
   }
-  .mv-area {
+  /* .mv-area {
     height: 120vh;
-  }
+  } */
   .mv-area .title-box h1 {
     font-size: 38px;
   }
