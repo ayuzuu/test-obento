@@ -166,7 +166,7 @@ header .logo-tel-area .tel .tel-text span {
 header .logo-tel-area .tel .number {
   padding-left: 20%;
   color: #a9926e;
-  font-size: 5.4vw;
+  font-size: 5.2vw;
   font-weight: bold;
   letter-spacing: 0.05em;
   font-family: 'Noto Sans JP', sans-serif;
@@ -369,7 +369,7 @@ index css ここから
   font-weight: bold;
   letter-spacing: 0.1em;
 }
-.mv-area  .sub-mv-text {
+.sub-mv-text {
   background-color: #a9926e;
   padding: 2% 6% 4%;
   font-size: 3.8vw;
@@ -378,8 +378,10 @@ index css ここから
   line-height: 1.5;
   text-align: center;
   text-shadow: 0px 0px 4px rgb(113, 97, 74);
+  z-index: 100;
+  position: relative;
 }
-.mv-area  .sub-mv-text img {
+.sub-mv-text img {
   text-align: center;
   width: 14%;
 }
@@ -400,25 +402,20 @@ index css ここから
   .mv-area .title-box {
     padding: 0% 0 8%;
   }
-  .mv-area .sub-mv-text img {
-    width: 80px;
+  .sub-mv-text img {
+    width: 60px;
   }
-  .mv-area .sub-mv-text {
+  .sub-mv-text {
     font-size: 18px;
   }
   .mv-area .title-box p {
     font-size: 22px;
   }
-  h2 {
-    font-size: 38px;
-    margin: 110px auto 120px;
-  }
-  .mv-area  .sub-mv-text {
-    position: absolute;
+  .sub-mv-text {
     bottom: 0;
     width: 100%;
   }
-  .mv-area  .sub-mv-text .brpc {
+  .sub-mv-text .brpc {
     display: none;
   }
 }
