@@ -69,23 +69,24 @@ body {
   line-height: 1;
 }
 footer {
-  background-color: #a9926e;
+  background-color: #2e2320;
   padding: 8% 0 8%;
   position: relative;
 }
 footer p {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   color: #fff;
   position: relative;
   z-index: 10;
+  letter-spacing: 0.05em;
 }
 footer a.circle {
   display: inline-block;
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  background: #a9926e;
+  background: #2e2320;
   font-size: 14px;
   text-align: center;
   line-height: 80px;
@@ -712,20 +713,20 @@ h2:after {
 .delivery-area .delivery-box .area-box-delivery {
   width: 100%;
   border-radius: 6px;
-  margin-bottom: 10%;
 }
-.delivery-area .delivery-box  img {
+.delivery-area .delivery-box img {
   width: 100%;
   padding: 4%;
   border-radius: 6px;
   background-color: #fff;
+  margin-bottom: 5%;
 }
 .delivery-area .delivery-box .img-other,
 .delivery-area .delivery-box .img-hyogo {
   padding: 0 8% 0 0;
 }
 .delivery-area .delivery-box h4 {
-  text-align: left;
+  text-align: center;
   font-size: 5vw;
   color: #a9926e;
   font-weight: bold;
@@ -742,37 +743,51 @@ h2:after {
   .delivery-area {
     width: 960px;
   }
-  .delivery-area .area-box-delivery {
+  .delivery-area .delivery-box .area-box-delivery {
     text-align: center;
+    width: calc(100% / 3);
+    padding: 0;
   }
   .delivery-area .delivery-box img {
-    width: 500px;
+    width: 250px;
   }
   .delivery-area .delivery-box .delivery-list {
     padding: 20px 100px;
     background-color: #f7f7f7;
   }
-  .delivery-area .delivery-box .delivery-list p {
+  .delivery-area .delivery-box .delivery-list li p {
     font-size: 20px;
+    width: 500px;
     margin-bottom: 5px;
   }
   .delivery-area .delivery-box .delivery-list-sub {
+    width: 500px;
     font-size: 14px;
   }
   .delivery-area .delivery-box .delivery-list-sub li {
     display: block;
     margin-bottom: 0;
   }
+  .delivery-area .delivery-box .delivery-list-sub p {
+    width: 480px;
+    margin: 0 180px 10px;
+    display: block;
+  }
   .delivery-area h3 {
     font-size: 26px;
   }
   .delivery-area .delivery-box h4 {
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
+    margin-bottom: 20px;
   }
   .delivery-area .delivery-box p {
-    width: 500px;
+    width: 250px;
     margin: 0 auto 20px;
+    font-size: 15px;
+  }
+  .pc-flex {
+    display: flex;
   }
 }
 
@@ -786,7 +801,7 @@ h2:after {
   justify-content: space-between;
   border: 1px solid #a9926e;
   padding: 4% 6%;
-  font-size: 4vw;
+  font-size: 3.6vw;
   letter-spacing: 0.05em;
   line-height: 1.5;
   border-radius: 6px;
