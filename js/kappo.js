@@ -38,7 +38,7 @@ $(function () {
     $(window).on('load resize', function () {
         width = $(window).width()
 
-        if (isSetSpSize == false && 800 <= width) {
+        if (800 <= width) {
             // PC
             // メニューの切り替え
             $("#sp-lunch-list").hide()
@@ -47,6 +47,8 @@ $(function () {
             // スライドショーの切り替え
             $.sublime_slideshow.changeOptions(slideshowOptionsPc)
         } else {
+            if (isSetSpSize) return
+            
             // SP
             // メニューの切り替え
             $("#sp-lunch-list").show()
