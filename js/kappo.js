@@ -28,8 +28,7 @@ $(function () {
 
     // window size
     var width = 0
-    var height = 0
-    var preHeight = -1
+    var isSetSpSize = false
 
     // スライドショー初期化
     $.sublime_slideshow(slideshowOptionsSp);
@@ -38,16 +37,8 @@ $(function () {
     // サイズ変更時イベント
     $(window).on('load resize', function () {
         width = $(window).width()
-        height = $(window).innerHeight()
-        
-        // 高さ変更の場合は何もしないよ
-        console.log(`${preHeight}:${height}`)
-        if (preHeight !== height) {
-            preHeight = height
-            return
-        }
 
-        if (800 <= width) {
+        if (isSetSpSize == false && 800 <= width) {
             // PC
             // メニューの切り替え
             $("#sp-lunch-list").hide()
@@ -63,6 +54,9 @@ $(function () {
 
             // スライドショーの切り替え
             $.sublime_slideshow.changeOptions(slideshowOptionsSp)
+
+            // SPの時は一度だけセットする
+            isSetSpSize = true
         }
     });
 });
