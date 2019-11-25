@@ -45,6 +45,14 @@ $(function () {
 
             // スライドショーの切り替え
             $.sublime_slideshow.changeOptions(slideshowOptionsPc)
+        } else {            
+            // SP
+            // メニューの切り替え
+            $("#sp-lunch-list").show()
+            $("#pc-lunch-list").hide()
+
+            // スライドショーの切り替え
+            // $.sublime_slideshow.changeOptions(slideshowOptionsSp)
         }
     });
 });
