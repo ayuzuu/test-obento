@@ -26,6 +26,10 @@ $(function () {
         overlay: "",
     }
 
+    // window size
+    var width = 0
+    var height = 0
+    var preHeight = -1
 
     // スライドショー初期化
     $.sublime_slideshow(slideshowOptionsSp);
@@ -33,8 +37,17 @@ $(function () {
 
     // サイズ変更時イベント
     $(window).on('load resize', function () {
-        var w = $(window).width()
-        if (800 <= w) {
+        width = $(window).width()
+        preHeight = height
+        height = $(window).height()
+
+        // 高さ変更のみの場合は何もしないよ
+        console.log(`${preHeight}:${height}`)
+        if (preHeight !== height) {
+            return
+        }
+
+        if (800 <= width) {
             // PC
             // メニューの切り替え
             $("#sp-lunch-list").hide()
@@ -42,7 +55,6 @@ $(function () {
 
             // スライドショーの切り替え
             $.sublime_slideshow.changeOptions(slideshowOptionsPc)
-
         } else {
             // SP
             // メニューの切り替え
