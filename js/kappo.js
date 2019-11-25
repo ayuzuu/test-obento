@@ -38,12 +38,12 @@ $(function () {
     // サイズ変更時イベント
     $(window).on('load resize', function () {
         width = $(window).width()
-        preHeight = height
         height = $(window).innerHeight()
-
-        // 高さ変更のみの場合は何もしないよ
+        
+        // 高さ変更の場合は何もしないよ
         console.log(`${preHeight}:${height}`)
         if (preHeight !== height) {
+            preHeight = height
             return
         }
 
