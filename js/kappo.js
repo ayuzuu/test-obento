@@ -28,7 +28,6 @@ $(function () {
 
     // window size
     var width = 0
-    var isSetSpSize = false
 
     // スライドショー初期化
     $.sublime_slideshow(slideshowOptionsSp);
@@ -46,19 +45,6 @@ $(function () {
 
             // スライドショーの切り替え
             $.sublime_slideshow.changeOptions(slideshowOptionsPc)
-        } else {
-            if (isSetSpSize) return
-            
-            // SP
-            // メニューの切り替え
-            $("#sp-lunch-list").show()
-            $("#pc-lunch-list").hide()
-
-            // スライドショーの切り替え
-            $.sublime_slideshow.changeOptions(slideshowOptionsSp)
-
-            // SPの時は一度だけセットする
-            isSetSpSize = true
         }
     });
 });
