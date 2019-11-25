@@ -39,7 +39,7 @@ $(function () {
     $(window).on('load resize', function () {
         width = $(window).width()
         preHeight = height
-        height = $(window).height()
+        height = $(window).innerHeight()
 
         // 高さ変更のみの場合は何もしないよ
         console.log(`${preHeight}:${height}`)
