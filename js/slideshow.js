@@ -66,13 +66,13 @@
                     fadeOutPercentile = (remainPercentile + (fadeInPercentile * 0.6)),
                     fadeOutPercentile_title = (remainPercentile + (fadeInPercentile * 0.3)),
                     keyframes = "@keyframes imageAnimation {0% {opacity: 0;animation-timing-function: ease-in;}{0}% {opacity: 1;}{1}% {opacity: 1;}{2}% {opacity: 0; animation-timing-function: ease-out;transform: scale(1.17) translateY(-4%) rotateZ(3deg);}100% { opacity: 0;transform: scale(1.17) translateY(-4%) rotateZ(3deg); }} @keyframes titleAnimation {0% { opacity: 0;transform: translateY(50px); }{0}% { opacity: 1;transform: translateY(0%); }{1}% { opacity: 1;transform: translateY(0%); }{3}% { opacity: 0; transform: scale(0.4) translateY(100%); }100% { opacity: 0; }}".format(fadeInPercentile, remainPercentile, fadeOutPercentile, fadeOutPercentile_title),
-                    otherCSS = ".sm-slider,.sm-slider:after { content: '';background: transparent url({0}) repeat top left;z-index: 0; }.sm-slider li span { width: 100%;height: 100%;position: absolute;top: 0px;left: 0px;color: transparent;background-size: cover;background-position: 50% 0%;background-repeat: no-repeat;opacity: 0;z-index: 0;animation: imageAnimation {1}s linear infinite 0s; }.sm-slider li div { z-index: 1000;position: absolute;bottom: 30px;left: 0px;width: 100%;text-align: center;opacity: 0;color: #fff;animation: titleAnimation {1}s linear infinite 0s; }".format(this.options.overlay, total_time),
+                    otherCSS = ".sm-slider,.sm-slider:after { content: '';background: transparent url({0}) repeat top left;z-index: 0; }.sm-slider li span { width: 100%;height: 100%;position: absolute;top: 0px;left: 0px;color: transparent;background-size: 90%;background-position: 50% 0%;background-repeat: no-repeat;opacity: 0;z-index: 0;animation: imageAnimation {1}s linear infinite 0s; }.sm-slider li div { z-index: 1000;position: absolute;bottom: 30px;left: 0px;width: 100%;text-align: center;opacity: 0;color: #fff;animation: titleAnimation {1}s linear infinite 0s; }".format(this.options.overlay, total_time),
                     css = keyframes + otherCSS,
                     src = this.options.src;
 
                 for (var i = 0; i < bgCount; i++) {
                     var bg = src[i];
-                    css += ".sm-slider li:nth-child({0}) span { background-image: url('{1}');animation-delay: {2}s; background-size:150% auto;} .sm-slider li:nth-child({0}) div { animation-delay: {2}s; }".format(i + 1, bg.url, duration * i);
+                    css += ".sm-slider li:nth-child({0}) span { background-image: url('{1}');animation-delay: {2}s; background-size:cover;} .sm-slider li:nth-child({0}) div { animation-delay: {2}s; }".format(i + 1, bg.url, duration * i);
                 }
 
                 if (this.options.rotating === false && this.options.scaling === false) {
