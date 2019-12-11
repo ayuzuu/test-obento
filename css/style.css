@@ -186,8 +186,8 @@ header .nav li {
 header .nav li:before {
   content: '';
   display: inline-block;
-  height: 8vw;
-  width: 2px;
+  height: 7vw;
+  width: 1px;
   background-color: #fff;
   left: -8%;
   top: 18%;
@@ -256,7 +256,7 @@ header .nav li a {
   }
   header .nav li a {
     font-size: 14px;
-    padding: 4% 0 2%;
+    padding: 3% 0 2%;
   }
   header .nav li a:after {
     width: 14px;
@@ -264,7 +264,7 @@ header .nav li a {
     margin: 5px auto 0;
   }
   header .nav li:before {
-    height: 34px;
+    height: 28px;
   }
 }
 
