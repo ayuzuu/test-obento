@@ -137,12 +137,12 @@ header .logo-tel-area img.logo {
   width: 30%;
 }
 header .logo-tel-area .tel {
-  width: 54%;
+  width: 50%;
   position: relative;
 }
 header .logo-tel-area .tel:before {
   content: '';
-  width: 18%;
+  width: 20%;
   height: 100%;
   background-image: url(/img/icon-tel.png);
   background-repeat: no-repeat;
@@ -153,11 +153,11 @@ header .logo-tel-area .tel:before {
   top: 0;
 }
 header .logo-tel-area .tel .tel-text {
-  padding-left: 20%;
-  font-size: 2.6vw;
+  padding-left: 18%;
+  font-size: 2.4vw;
   font-weight: bold;
   color: #a9926e;
-  margin-bottom: 2%;
+  margin-bottom: 1%;
   letter-spacing: 0.05em;
   font-family: 'Noto Sans JP', sans-serif;
 }
@@ -165,9 +165,9 @@ header .logo-tel-area .tel .tel-text span {
   color: #ffb357;
 }
 header .logo-tel-area .tel .number {
-  padding-left: 20%;
+  padding-left: 18%;
   color: #a9926e;
-  font-size: 5.2vw;
+  font-size: 4.9vw;
   font-weight: bold;
   letter-spacing: 0.05em;
   font-family: 'Noto Sans JP', sans-serif;
@@ -177,6 +177,7 @@ header .nav {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding: 0 2%;
 }
 header .nav li {
   width: calc(90% / 3);
@@ -200,11 +201,11 @@ header .nav li a:after {
   background-image: url(/img/icon-arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
-  width: 4vw;
+  width: 3.8vw;
   height: 2vh;
   display: block;
   text-align: center;
-  margin: 6% auto 0;
+  margin: 5% auto 0;
   opacity: 0.7;
 }
 header .nav li a {
@@ -214,7 +215,7 @@ header .nav li a {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 3.4vw;
   letter-spacing: 0.1em;
-  padding: 10% 0 4%;
+  padding: 6% 0 4%;
 }
 @media screen and (min-width: 800px) {
   header {
@@ -279,6 +280,7 @@ tel ここから
   background-color: #a9926e;
   position: relative;
   border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
 }
 .tel-area:before {
   content: '';
@@ -464,7 +466,7 @@ h2:after {
 }
 @media screen and (min-width: 800px) {
   h2 {
-    font-size: 38px;
+    font-size: 32px;
     margin: 110px auto 120px;
   }
   h2:after {
@@ -505,15 +507,16 @@ h2:after {
   padding: 0 6% 10%;
 }
 .lunch-area .text-box-lunch h3 {
-  font-size: 5vw;
+  font-size: 5.2vw;
   letter-spacing: 0.05em;
-  font-weight: bold;
+  font-weight: 900;
   margin-bottom: 3%;
   line-height: 1.5;
   height: 9vh;
+  font-family: 'Noto Serif JP', serif;
 }
 .lunch-area .text-box-lunch p {
-  font-size: 4vw;
+  font-size: 3.8vw;
   line-height: 1.5;
   margin-bottom: 2%;
   text-align: justify;
@@ -523,8 +526,9 @@ h2:after {
 }
 .lunch-area .text-box-lunch .price {
   font-size: 5vw;
-  font-weight: bold;
+  font-weight: 900;
   margin-right: 2%;
+  font-family: 'Noto Serif JP', serif;
 }
 @media screen and (min-width: 800px) {
   #pc-lunch-list {
@@ -550,11 +554,12 @@ h2:after {
     background-color: #d34955;
   }
   #pc-lunch-list .text-box-lunch {
-    width: 400px;
+    width: 430px;
     padding: 30px 20px;
+    margin: 0 auto;
   }
   #pc-lunch-list .text-box-lunch h3 {
-    font-size: 18px;
+    font-size: 20px;
     height: 30px;
   }
   #pc-lunch-list li:nth-child(even) .img-box-lunch img {
@@ -585,6 +590,7 @@ h2:after {
   background-color:rgba(222,203,172,0.8);
   position: absolute;
   z-index: 10;
+  color: #333;
 }
 .concept-area ul li:nth-child(odd) .text-box-concept {
   top: 0;
@@ -604,7 +610,7 @@ h2:after {
 }
 .concept-area ul li .text-box-concept p {
   line-height: 1.5;
-  font-size: 4vw;
+  font-size: 3.8vw;
 }
 .concept-area ul li .img-box-concept {
   width: 90%;
@@ -635,7 +641,7 @@ h2:after {
     height: 350px;
   }
   .concept-area ul li .text-box-concept {
-    width: 600px;
+    width: 440px;
     padding: 60px;
   }
   .concept-area ul li .text-box-concept h3 {
@@ -643,6 +649,7 @@ h2:after {
   }
   .concept-area ul li .text-box-concept p {
     font-size: 14px;
+    line-height: 1.8;
   }
   .concept-area ul li .img-box-concept {
     width: 600px;
@@ -756,12 +763,11 @@ h2:after {
     background-color: #f7f7f7;
   }
   .delivery-area .delivery-box .delivery-list li p {
-    font-size: 20px;
+    font-size: 16px;
     width: 500px;
     margin-bottom: 5px;
   }
   .delivery-area .delivery-box .delivery-list-sub {
-    width: 500px;
     font-size: 14px;
   }
   .delivery-area .delivery-box .delivery-list-sub li {
@@ -769,9 +775,10 @@ h2:after {
     margin-bottom: 0;
   }
   .delivery-area .delivery-box .delivery-list-sub p {
-    width: 480px;
+    width: 520px;
     margin: 0 180px 10px;
     display: block;
+    font-size: 12px;
   }
   .delivery-area h3 {
     font-size: 26px;
@@ -796,7 +803,7 @@ h2:after {
   font-weight: bold;
 }
 .shop-area .adress-box {
-  width: 100%;
+  width: 100%;f
   color: #444;
   justify-content: space-between;
   border: 1px solid #a9926e;
