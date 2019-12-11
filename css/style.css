@@ -153,7 +153,7 @@ header .logo-tel-area .tel:before {
   top: 0;
 }
 header .logo-tel-area .tel .tel-text {
-  padding-left: 18%;
+  padding-left: 20%;
   font-size: 2.4vw;
   font-weight: bold;
   color: #a9926e;
@@ -165,7 +165,7 @@ header .logo-tel-area .tel .tel-text span {
   color: #ffb357;
 }
 header .logo-tel-area .tel .number {
-  padding-left: 18%;
+  padding-left: 20%;
   color: #a9926e;
   font-size: 4.9vw;
   font-weight: bold;
@@ -215,7 +215,7 @@ header .nav li a {
   font-family: 'Noto Sans JP', sans-serif;
   font-size: 3.4vw;
   letter-spacing: 0.1em;
-  padding: 6% 0 4%;
+  padding: 8% 0 4%;
 }
 @media screen and (min-width: 800px) {
   header {
@@ -522,7 +522,7 @@ h2:after {
   text-align: justify;
 }
 .lunch-area .text-box-lunch p.text {
-  height: 100px;
+  height: 64px;
 }
 .lunch-area .text-box-lunch .price {
   font-size: 5vw;
